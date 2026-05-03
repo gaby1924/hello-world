@@ -19,6 +19,6 @@ if (session_status() == PHP_SESSION_NONE) {
         <a href="index.php?page=catalog">Catalog</a> |
         <a href="index.php?page=cart">Cart</a> |
         <a href="index.php?page=checkout">Checkout</a>
-</nav>
+    </nav>
     <hr>
 </header>
