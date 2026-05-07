@@ -1,9 +1,10 @@
-// Product Model
-// Gaby Malaka
-// 4.26.2026
-
+<!-----------
+Product Model
+Gaby Malaka
+5.6.2026
+------------->
 <?php
-require_once __DIR__ . '/../includes/db.php';
+require dirname(__DIR__) . '/includes/db.php';
 
 function getAllProducts(PDO $conn): array {
     $sql = "SELECT prod_ID, prod_name, prod_desc, prod_price, prod_quantity
