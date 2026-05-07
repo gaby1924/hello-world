@@ -5,7 +5,7 @@ SDC 310-Project
 Catalog Controller
 ------------->
 <?php
-require_once __DIR__ . '/../models/ProductModel.php';
+require dirname(__DIR__) . '/models/ProductModel.php';
 
 class CatalogController
 {
