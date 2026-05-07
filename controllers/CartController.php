@@ -5,7 +5,7 @@ SDC 310-Project
 Cart Controller
 ------------->
 <?php
-require_once __DIR__ . '/../models/ProductModel.php';
+require dirname(__DIR__) . '/models/ProductModel.php';
 
 class CartController
 {
@@ -16,7 +16,7 @@ class CartController
         }
 
         $cartItems = $_SESSION['cart'];
-        require __DIR__ . '/../views/CartView.php';
+        require dirname(__DIR__) . '/views/CartView.php';
     }
 
     public function handlePost()
