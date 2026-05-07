@@ -5,7 +5,7 @@ SDC 310-Project
 Checkout Controller
 -------------------->
 <?php
-require_once __DIR__ . '/../models/ProductModel.php';
+require dirname(__DIR__) . '/models/ProductModel.php';
 
 class CheckoutController
 {
@@ -30,7 +30,7 @@ class CheckoutController
         $orderTotal = $subtotal + $tax + $shipping;
 
         // Load the checkout view
-        require __DIR__ . '/../views/CheckoutView.php';
+        require dirname(__DIR__) . '/views/CheckoutView.php';
     }
 
     public function confirm()
@@ -43,7 +43,7 @@ class CheckoutController
         $_SESSION['cart'] = [];
 
         // Load confirmation view
-        require __DIR__ . '/../views/CheckoutConfirmView.php';
+        require dirname(__DIR__) . '/views/CheckoutConfirmView.php';
     }
 }
 ?>
